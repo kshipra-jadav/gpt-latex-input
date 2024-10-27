@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT LaTeX Input",
+  "description": "Provides a way to input LaTeX commands in ChatGPT with rendering.",
+  "version": "1.0",
+  "action": {
+    "default_popup": "hello.html",
+    "default_icon": "/assets/extension_icon.png"
+  },
+  "background": {
+    "service_worker": "scripts/gpt.js"
+  },
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://chatgpt.com/*"
+  ]
+}
